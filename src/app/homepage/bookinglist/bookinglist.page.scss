@@ -1,0 +1,36 @@
+ion-toolbar {
+    --background: #F3A712;
+};
+
+ion-content{
+    --background: #29335C;
+};
+
+ion-footer{
+    position: fixed;
+    bottom: 0;
+}
+.logo{
+    display: block;
+    width:100px;
+    height:80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booklist{
+    background-color: gray;
+    display: block;
+    width:100%;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booklist h3{
+    padding-top: 10px;
+}
+
+.proceed {
+    float: right;
+}

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/homepage"></ion-back-button>
+    </ion-buttons>
+    <ion-title>My profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-text-center">
+  <ion-grid>
+    <!-- <ion-row justify-content-center>
+      <ion-col align-self-center>
+          <ion-item>
+              <img>
+          </ion-item>
+      </ion-col>
+  </ion-row> -->
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-input type="uname" name="uname" placeholder="Username: You username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="email" name="email" placeholder="Email: youremail@gmail.com"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="phone" name="phone" placeholder="phone: +678 6538994"></ion-input>
+      </ion-item>
+        <ion-button routerLink="./register">
+          <ion-icon name="create-outline"></ion-icon>
+          Edit Profile
+        </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <h2>Payment Methods</h2>
+      <ion-item>
+        <ion-icon name="card-outline"></ion-icon>
+        <h5>Card holder name</h5>
+        <ion-item>
+          <p>**** **** **** 1234</p>
+        </ion-item>
+        <ion-icon name="create-outline"></ion-icon>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-content>

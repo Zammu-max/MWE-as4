@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar >
+</ion-header>
+
+<ion-content >
+  <form  #form="ngForm" (ngSubmit)="register(form)">
+    <ion-grid>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <ion-item>
+            <img src="../../assets/img/logo.png">
+          </ion-item>
+          <div class="ion-text-center">
+            <ion-text color="light">
+            <h3>Sign up</h3>
+          </ion-text>
+          </div>
+          <ion-item>
+            <ion-input ngModel type="uname" name="uname" #uname="ngModel" required uname placeholder="Enter your username" required minlength="2"></ion-input>
+          </ion-item>
+          <ion-item  *ngIf="!uname.valid && uname.touched" lines="none">
+            <ion-label class="errorMsg">Should be longer than 2 characters</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-input ngModel type="email" name="email" #emailCtrl="ngModel" required email placeholder="Enter your email"></ion-input>
+          </ion-item>
+          <ion-item  *ngIf="!emailCtrl.valid && emailCtrl.touched" lines="none">
+            <ion-label class="errorMsg">Should be a valid email address</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-input ngModel type="number" name="number" #number="ngModel" required number placeholder="Enter your number"></ion-input>
+          </ion-item>
+          <ion-item  *ngIf="!number.valid && number.touched" lines="none">
+            <ion-label class="errorMsg">number is required</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-input ngModel type="number" name="number" #number="ngModel" required number placeholder="Enter your number"></ion-input>
+          </ion-item>
+          <ion-item  *ngIf="!number.valid && number.touched" lines="none">
+            <ion-label class="errorMsg">number is required</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-input ngModel type="password" name="password" #pwdCtrl="ngModel" required minlength="6" placeholder="Enter your password"></ion-input>
+          </ion-item>
+          <ion-item  *ngIf="!pwdCtrl.valid && pwdCtrl.touched" lines="none">
+            <ion-label class="errorMsg">Should have a minimum of a 6 characters</ion-label>
+        </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3">
+      <ion-button type="submit" expand="block" [disabled]="form.invalid">Submit</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
