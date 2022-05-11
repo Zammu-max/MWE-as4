@@ -12,7 +12,7 @@ ion-footer{
 }
 .logo{
     display: block;
-    width:100px;
+    width:80px;
     height:80px;
     margin-left: auto;
     margin-right: auto;
@@ -26,11 +26,39 @@ ion-footer{
     margin-left: auto;
     margin-right: auto;
 }
-
+ 
 .booklist h3{
-    padding-top: 10px;
+    padding-top: 5px;
+    text-align: center;
 }
 
 .proceed {
     float: right;
+}
+
+ion-item{ 
+    --background: #5e5e5e;
+};
+
+.backBtn{
+    --background: #DB2B39;
+};
+
+h4{
+    margin-left: 75px;
+    font-size: 16px;
+};
+
+.movpic{
+    margin-top: 50px;
+    margin-right: 55px;
+    width: 90px;
+    height: 130px;
+}
+
+p{
+    margin-top: 50px; 
+    text-align: left;
+    margin-right: 100px;
+    width: 100%;
 }

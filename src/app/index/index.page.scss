@@ -1,8 +1,20 @@
 ion-content{
-    --background: #ffffff;
+    --background: #29335C;
     --padding-top: 100px;
 };
 ion-button{
     --background: #DB2B39;
     border-radius: 50px;
 };
+
+ion-toolbar {
+    --background: #F3A712;
+};
+
+.logo{
+    display: block;
+    width:100px;
+    height:80px;
+    margin-left: auto;
+    margin-right: auto;
+}
