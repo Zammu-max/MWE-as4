@@ -13,6 +13,16 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 $RECYCLE.BIN/
 
+angular.json
+capacitor.config.ts
+ionic.config.json
+karma.conf.js 
+package-lock.json
+package.json
+tsconfig.app.json
+tsconfig.spec.json
+tsconfig.json 
+
 *.log
 log.txt
 npm-debug.log*
