@@ -16,7 +16,7 @@
 
   </ion-toolbar>
 </ion-header>
-
+ 
 <ion-content>
 
   <ion-searchbar></ion-searchbar>
@@ -45,25 +45,26 @@
       <ion-select-option value="mov6">Lightyear</ion-select-option>
     </ion-select>
   </ion-item>
-
-      <ion-grid class="ion-text-center">
-        <h4>Date & Time:</h4>
-        <ion-datetime></ion-datetime>
-      </ion-grid>
-
 <ion-grid class="ion-text-center">
-  <ion-button routerLink="/homepage/branch/cart/bookings/seat">Seat placement</ion-button>
+  <ion-datetime></ion-datetime>
 </ion-grid>
 
+<ion-grid class="ion-text-center">
+  <ion-button>Seat placement</ion-button><br>
+  <ion-button color="danger">Submit Booking</ion-button><br>
+  <ion-button style="margin-top: 10px;" routerLink="/homepage" color="warning" >Cancel</ion-button>
+</ion-grid>
 
+<ion-footer>
     <ion-grid class="ion-text-center">
     <ion-row>
       <ion-col>
-        <ion-button color="danger" style="width: 350px">Submit Booking</ion-button><br>
-        <button style="margin-top: 10px;" routerLink="/homepage">Cancel</button>
+        <!-- <ion-button color="danger">Submit Booking</ion-button><br>
+        <button style="margin-top: 10px;" routerLink="/homepage">Cancel</button> -->
       </ion-col>
     </ion-row>
   </ion-grid>
+</ion-footer>
 
 </ion-content>
 
