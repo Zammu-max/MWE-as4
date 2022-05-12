@@ -19,7 +19,11 @@ const routes: Routes = [
   {
     path: 'bookinglist',
     loadChildren: () => import('./bookinglist/bookinglist.module').then( m => m.BookinglistPageModule)
+  },  {
+    path: 'mail',
+    loadChildren: () => import('./mail/mail.module').then( m => m.MailPageModule)
   }
+
 ];
 
 @NgModule({
